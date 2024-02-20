@@ -1,0 +1,14 @@
+// Initial stage
+
+
+// 2024/02/19
+1- Variables and types of variables. ( Done )
+2- print statement. ( Done )
+3- concatenation. ( Done )
+4- arithmetic oprators ( Done )
+
+
+// 2024/02/20
+5- Data types ( Done )
+6- For Loop ( Dones)
+7- While Loop
