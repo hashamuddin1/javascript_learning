@@ -125,5 +125,101 @@ while (i < studentArrOfObj.length) {
   i++;
 }
 
-console.log("from while loop", i); // no error print krwa dega because iska scope globally poori file tak ka hay
+//console.log("from while loop", i); // no error print krwa dega because iska scope globally poori file tak ka hay
 //console.log("from for loop", j);  // error because iska scope sirf for ki body k andar tak ka hay
+
+// Methods Of Array
+
+// push
+// sab se akhiri may insert krdeta hay.
+
+const employeeData = ["hasham", "azhar", "ali"];
+//console.log("before push", employeeData);
+employeeData.push("khalid");
+//console.log("after push", employeeData);
+
+//pop
+// akhiri walay ko remove krdeta hay
+employeeData.pop();
+//console.log("after pop", employeeData);
+
+//includes
+// agar hamay maloom krna ho k kia ye element array may mojood hay ya nhi
+// agar mojood hay tw true wrna false
+// console.log(employeeData.includes("ahmed"));
+// console.log(employeeData.includes("hasham"));
+
+//map
+// agar saray element may koi operation perform krna ho
+// original array remains same
+const numArray = [2, 3, 99, 77];
+// console.log(numArray.map((num) => num * 10));
+// console.log(numArray);
+
+//filter
+// agar array may koi filteration krni ho
+// original array remain same
+// console.log(numArray.filter((num) => num > 30));
+// console.log(numArray);
+
+//reference of value
+let var1 = 5;
+let var2 = var1;
+var2 = 86;
+// console.log(var1);
+// console.log(var2);
+
+// refrence of location
+let arr1 = [1, 2, 3, 4];
+let arr2 = arr1;
+arr2.push(88);
+console.log(arr1);
+console.log(arr2);
+
+// copy of array
+let arr3 = Array.from(arr1);
+//console.log(arr3);
+arr3.push(153);
+//console.log(arr3);
+
+let obj2 = {
+  firstName: "hasham",
+  lastName: "uddin",
+};
+let obj3 = Object.assign({}, obj2);
+//console.log(obj3);
+
+// print all keys
+//console.log(Object.keys(obj3));
+// print all values
+//console.log(Object.values(obj3));
+
+// logic building
+const arrNum = [2, 5, 6, 0, -5, -2, 10, 8];
+// console.log(Math.max(...arrNum));
+let maxNum = 0;
+for (let i = 0; i < arrNum.length; i++) {
+  if (maxNum < arrNum[i]) {
+    maxNum = arrNum[i];
+  }
+}
+console.log(maxNum);
+
+//Task
+
+// 1- Apnay ek odd number ki array leli.. aur usme se middle element
+// nikalna hay without sing any built in method
+// 2- Apnay array ki length maloom krni hay
+
+const arr4 = [1, 8, 5, 6, 7];
+
+let obj4 = {
+  firstName: "hasham",
+  lastName: "uddin",
+  firstName: "azhar",
+};
+
+obj4.dob = "2000-09-07";
+obj4["age"] = 23;
+obj4["age"] = 85;
+console.log(obj4);

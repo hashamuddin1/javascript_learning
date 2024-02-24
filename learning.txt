@@ -11,4 +11,8 @@
 // 2024/02/20
 5- Data types ( Done )
 6- For Loop ( Dones)
-7- While Loop
+7- While Loop (Done)
+
+8- Methods of Array. ( Done )
+9- Objects.
+10- Methods of Object. (Done )
