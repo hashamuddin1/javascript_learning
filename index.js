@@ -173,8 +173,8 @@ var2 = 86;
 let arr1 = [1, 2, 3, 4];
 let arr2 = arr1;
 arr2.push(88);
-console.log(arr1);
-console.log(arr2);
+// console.log(arr1);
+// console.log(arr2);
 
 // copy of array
 let arr3 = Array.from(arr1);
@@ -203,12 +203,12 @@ for (let i = 0; i < arrNum.length; i++) {
     maxNum = arrNum[i];
   }
 }
-console.log(maxNum);
+// console.log(maxNum);
 
 //Task
 
 // 1- Apnay ek odd number ki array leli.. aur usme se middle element
-// nikalna hay without sing any built in method
+// nikalna hay without using any built in method
 // 2- Apnay array ki length maloom krni hay
 
 const arr4 = [1, 8, 5, 6, 7];
@@ -222,4 +222,113 @@ let obj4 = {
 obj4.dob = "2000-09-07";
 obj4["age"] = 23;
 obj4["age"] = 85;
-console.log(obj4);
+// console.log(obj4);
+
+// Task 1
+
+// create array
+let arr = [1, 3, 8];
+// create lenth to check the length of the array
+let length = arr.length;
+// - the no of array index and / by 2
+let midInd = (length - 1) / 2;
+// check midnumber or index number
+let midNum = arr[midInd];
+// console.log(midNum);
+
+//task 2
+// create array
+let arrCount = [1, 8, 9, 6, 5, 5];
+
+// set counter to count the array elements
+let count = 0;
+
+// for loop for check the index
+for (let i = 0; i < arrCount.length; i++) {
+  count++;
+}
+// console.log(count);
+
+const arrNum1 = [-7, -11, -100, -5, -1, -45];
+let maxNum1 = arrNum1[0]; //-7
+for (let i = 0; i < arrNum1.length; i++) {
+  if (maxNum1 < arrNum1[i]) {
+    maxNum1 = arrNum1[i];
+  }
+}
+//console.log(maxNum1);
+
+//if else
+// const num1 = 5;
+// if (num1 > 3) {
+//   console.log("greater than 3");
+// } else {
+//   console.log("less than 3");
+// }
+
+let num2 = false;
+// null, undefined, false
+// if (!num2) {
+//   console.log("value not given");
+// } else {
+//   console.log("value given");
+// }
+
+let num3 = 55;
+// if (num3 > 10 || num3 < 40 || num3 < 20) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+
+const marks = 89;
+// <50 fail
+// 50 - 60 D
+// 61 - 70 C
+// 71 - 80 B
+// 81 -90 A
+// 91 - 100 A1
+
+// if (marks >= 91 && marks < 100) {
+//   console.log("A1 Grade");
+// } else if (marks >= 81 && marks < 90) {
+//   console.log("A Grade");
+// } else if (marks >= 71 && marks < 80) {
+//   console.log("B Grade");
+// } else if (marks >= 61 && marks < 70) {
+//   console.log("C Grade");
+// } else if (marks >= 50 && marks < 60) {
+//   console.log("D Grade");
+// } else {
+//   console.log("F Grade");
+// }
+
+// TASK
+const userData = [
+  {
+    emailAddress: "hasham1@yopmail.com",
+    password: "12345678",
+    fullName: "hasham",
+  },
+  {
+    emailAddress: "hasham2@yopmail.com",
+    password: "123456789",
+    fullName: "hasham1",
+  },
+  {
+    emailAddress: "hasham2@yopmail.com",
+    password: "12345678910",
+    fullName: "hasham2",
+  },
+];
+
+const userEmail = "hasham2@yopmail.com";
+const userPassword = "12345678910";
+
+const num4 = "4";
+if (num4 === "4") {
+  // value is same but data type is different
+  console.log("Number 4");
+} else {
+  console.log("something went wrong");
+}

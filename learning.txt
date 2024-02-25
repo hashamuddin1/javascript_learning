@@ -16,3 +16,6 @@
 8- Methods of Array. ( Done )
 9- Objects.
 10- Methods of Object. (Done )
+
+11- If else
+12- Else if
