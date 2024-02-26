@@ -17,5 +17,11 @@
 9- Objects.
 10- Methods of Object. (Done )
 
-11- If else
-12- Else if
+11- If else ( Done )
+12- Else if ( Done )
+
+
+13- Functions ( Done )
+14- Types of Functions. ( Done )
+15- Rest oprators ( Done )
+16- Hoisting ( Done )

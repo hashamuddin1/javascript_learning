@@ -322,13 +322,128 @@ const userData = [
   },
 ];
 
-const userEmail = "hasham2@yopmail.com";
-const userPassword = "12345678910";
+// const userEmail = "hasham2@yopmail.com";
+// const userPassword = "12345678910";
 
 const num4 = "4";
-if (num4 === "4") {
-  // value is same but data type is different
-  console.log("Number 4");
-} else {
-  console.log("something went wrong");
+// if (num4 === "4") {
+//   // value is same but data type is different
+//   console.log("Number 4");
+// } else {
+//   console.log("something went wrong");
+// }
+
+const UserData = [
+  {
+    Email: "ba6329728@gmail.com",
+    Password: "12345",
+    FirstName: "Bushra_Ali",
+  },
+  {
+    Email: "bushraalisamoon@gmail.com",
+    Password: "54321",
+    FirstName: "Bushra",
+  },
+  {
+    Email: "sidraali@gmail.com",
+    Password: "09876",
+    FirstName: "Sidra_Ali",
+  },
+];
+const userEmail = "bushraalisamoon@gmail.com";
+const userPassword = "54321";
+
+let output = "Invalid Credentials";
+
+for (let i = 0; i < UserData.length; i++) {
+  if (
+    userEmail === UserData[i].Email &&
+    userPassword === UserData[i].Password
+  ) {
+    output = UserData[i].FirstName;
+  }
 }
+
+// console.log(output);
+
+// arrow function
+
+let num5 = 3;
+let num6 = 88;
+
+// Arrow function without arguments
+const sumNum = () => {
+  const num7 = 44;
+  return num7 + num5 + num6;
+};
+
+const result = sumNum();
+// console.log(result);
+
+// Arrow function with arguments
+const printName = (firstName, lastName) => {
+  return `Your Full Name is ${firstName} ${lastName}`;
+};
+
+const result1 = printName("hasham", "uddin");
+// console.log(result1);
+
+const checkAge = (age) => {
+  if (age >= 18) {
+    return `You are valid`;
+  } else {
+    return `You are not valid`;
+  }
+};
+
+const result2 = checkAge(45);
+// console.log(result2);
+
+// Rest Operator
+const printProduct = (firstName, lastName, ...args) => {
+  return `${firstName} ${lastName} has ${args} products`;
+};
+
+const result3 = printProduct(
+  "hasham",
+  "uddin",
+  "shampoo",
+  "chips",
+  "shampoo",
+  5,
+  true,
+  "chips"
+);
+// console.log(result3);
+
+const ownerData = (firstName) => {
+  if (firstName === "hasham") {
+    return printProduct(
+      "hasham",
+      "uddin",
+      "shampoo",
+      "chips",
+      "shampoo",
+      5,
+      true,
+      "chips"
+    );
+  }
+};
+
+const result4 = ownerData("hasham");
+//console.log(result4);
+
+// Task
+// 4 3 2
+// ek function banana hay
+// agar user 4 day tw 3 aur 2 ka sum print hojai
+// lekin agar 3 day tw 4 aur 2 sum print hojai
+// lekin agar 2 day tw 4 aur 3 sum print hojai
+// isme koi bhi if else else if use nhi krsaktay ternary operator, switch case.
+
+// Nodejs
+
+// Hoisting
+console.log(node);
+let node = "Nodejs";
