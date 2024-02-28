@@ -445,5 +445,23 @@ const result4 = ownerData("hasham");
 // Nodejs
 
 // Hoisting
-console.log(node);
+// console.log(node);
 let node = "Nodejs";
+
+// Asynchronous Function
+// Non-blocking I/O
+// Single thread
+console.log("first");
+console.log("second");
+setTimeout(() => {
+  console.log("third");
+}, 3000); // 3 seconds // Asynchronous function ( time taken function )
+console.log("fourth");
+console.log("fiveth");
+setTimeout(() => {
+  console.log("sixth");
+}, 1000);
+console.log("seventh");
+setTimeout(() => {
+  console.log("ninth");
+}, 2000);
