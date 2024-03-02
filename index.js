@@ -465,3 +465,11 @@ console.log("seventh");
 setTimeout(() => {
   console.log("ninth");
 }, 2000);
+
+// TASK
+
+// let arr=['g','a','c','x','m']
+// ['a','c','g','m','x']
+// without using any builtin method
+
+// dynamic array
